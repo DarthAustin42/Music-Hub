@@ -17,7 +17,7 @@
 			tr:nth-child(even) {
 			    background-color: #dddddd;
 			}
-			td:last-chile {
+			td:last-child {
 				background-color: #ffffff;
 			}
 
