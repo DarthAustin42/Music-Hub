@@ -18,7 +18,8 @@
 
     <body>
         <div class="addRecord">
-            <h1>Add a new song</h1>
+            <hr>
+            <center><h1>Add a new song</h1></center>
         </div>
         @yield('content')
     </body>

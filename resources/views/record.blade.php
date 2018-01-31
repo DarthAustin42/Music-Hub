@@ -45,14 +45,11 @@
 
 		@section('content')
 			<div class="panel-body">
-		        <!-- Display Validation Errors -->
 		        @include('common.errors')
 
-		        <!-- New Task Form -->
 		        <form action="{{ url('/') }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
 
-		            <!-- Task Name -->
 		            <div class="form-group">
 		            	<table>
 						  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
@@ -61,34 +58,8 @@
 						  	<tr><input type="text" name="genre" id="record-genre" class="form-control" placeholder="Genre"></tr>
 						  	<tr><input type="text" name="time" id="record-time" class="form-control" placeholder="Time"></tr>
 					  	</table>
-		                
-		                <!-- <label for="record" class="col-sm-3 control-label">Title</label>
-		                <div class="col-sm-6">
-		                    <input type="text" name="title" id="record-title" class="form-control">
-		                </div>
-
-		                <label for="record" class="col-sm-3 control-label">Author</label>
-		                <div class="col-sm-6">
-		                    <input type="text" name="author" id="record-author" class="form-control">
-		                </div>
-
-		                <label for="record" class="col-sm-3 control-label">Album</label>
-		                <div class="col-sm-6">
-		                    <input type="text" name="album" id="record-album" class="form-control">
-		                </div>
-
-		                <label for="record" class="col-sm-3 control-label">Genre</label>
-		                <div class="col-sm-6">
-		                    <input type="text" name="genre" id="record-genre" class="form-control">
-		                </div>
-
-		                <label for="record" class="col-sm-3 control-label">Time</label>
-		                <div class="col-sm-6">
-		                    <input type="text" name="time" id="record-time" class="form-control">
-		                </div> -->
 		            </div>
 
-		            <!-- Add Task Button -->
 		            <div class="form-group">
 		                <div class="col-sm-offset-3 col-sm-6">
 		                    <button type="submit" class="btn btn-default">
