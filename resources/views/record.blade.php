@@ -6,7 +6,6 @@
 	    <p class="album">{{$records->album}}</p>
 	    <p class="genre">{{$records->genre}}</p>
 	    <p class="time">{{$records->time}}</p>
-	    <p>test</p>
 	@endforeach
 </body>
 </html>
