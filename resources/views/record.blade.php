@@ -33,7 +33,22 @@
 
 		            <!-- Task Name -->
 		            <div class="form-group">
-		                <label for="record" class="col-sm-3 control-label">Record</label>
+		            	<table>
+		            		<tr>
+						    	<th>Title</th>
+							    <th>Author</th>
+							    <th>Album</th>
+							    <th>Genre</th>
+							    <th>Time</th>
+						  	</tr>
+						  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
+						  	<tr><input type="text" name="author" id="record-author" class="form-control" placeholder="Author"></tr>
+						  	<tr><input type="text" name="album" id="record-album" class="form-control" placeholder="Album"></tr>
+						  	<tr><input type="text" name="genre" id="record-genre" class="form-control" placeholder="Genre"></tr>
+						  	<tr><input type="text" name="time" id="record-time" class="form-control" placeholder="Time"></tr>
+					  	</table>
+		                
+		                <!-- <label for="record" class="col-sm-3 control-label">Title</label>
 		                <div class="col-sm-6">
 		                    <input type="text" name="title" id="record-title" class="form-control">
 		                </div>
@@ -56,7 +71,7 @@
 		                <label for="record" class="col-sm-3 control-label">Time</label>
 		                <div class="col-sm-6">
 		                    <input type="text" name="time" id="record-time" class="form-control">
-		                </div>
+		                </div> -->
 		            </div>
 
 		            <!-- Add Task Button -->
