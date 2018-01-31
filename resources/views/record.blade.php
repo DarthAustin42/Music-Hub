@@ -61,9 +61,37 @@
 
 		            <div class="form-group">
 	                    <center>
-		                    <button type="submit" class="btn btn-default">
-		                        <i class="fa fa-plus"></i> Add Record
-		                    </button>
+		                    <button type="submit" class="btn btn-default">Add Song</button>
+	                    </center>
+		            </div>
+		        </form>
+		    </div>
+	    @endsection
+
+	    @section('updateRecords')
+			<div class="updateRecord">
+	            <br>
+	            <hr>
+	            <center><h1>Update a song</h1></center>
+	        </div>
+			<div class="panel-body">
+		        @include('common.errors')
+
+		        <form action="{{ url('/record') }}" method="POST" class="form-horizontal">
+		            {{ csrf_field() }}
+	            	{{ method_field('UPDATE') }}
+
+		            <div class="form-group">
+		            	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		            		@foreach($record as $records)
+		            			<a class="dropdown-item">{{$records->title}}</a>
+		            		@endforeach
+		            	</div>
+		            </div>
+
+		            <div class="form-group">
+	                    <center>
+		                    <button type="submit" class="btn btn-default">Update Song</button>
 	                    </center>
 		            </div>
 		        </form>
