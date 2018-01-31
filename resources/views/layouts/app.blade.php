@@ -8,7 +8,9 @@
             .addRecord {
                 top: 20px;
                 margin: 10px;
+                margin-bottom: 0px;
                 padding: 10px;
+                padding-bottom: 0px;
             }
         </style>
         <!-- CSS And JavaScript -->
