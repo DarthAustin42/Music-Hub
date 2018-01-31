@@ -60,7 +60,7 @@ Route::post('/', function (Request $request) {
 /**
  * Delete Task
  */
-Route::delete('/Record/{record}', function (Record $record) {
+Route::delete('/record/{record}', function (Record $record) {
     $record->delete();
 
     return redirect('/');
