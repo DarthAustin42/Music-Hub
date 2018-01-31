@@ -6,6 +6,7 @@
 			    font-family: arial, sans-serif;
 			    border-collapse: collapse;
 			    width: 100%;
+			    margin: 10px;
 			}
 
 			td, th {
@@ -19,6 +20,7 @@
 			}
 			td:last-child {
 				background-color: #ffffff;
+				border: none;
 			}
 
             input[type=text], select {
