@@ -2,11 +2,7 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 99%;
-    margin: 1%;
-}
-
-td {
-    height: auto;
+    margin: 0px 1%;
 }
 
 td, th {
