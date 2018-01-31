@@ -82,14 +82,11 @@
 	            	{{ method_field('UPDATE') }}
 
 		            <div class="form-group">
-		            	<div class="dropdown">
-		            		<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-hasspopup="true" aria-expanded="false">Select Song To Change</button>
-			            	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			            		@foreach($record as $records)
-			            			<a class="dropdown-item">{{$records->title}}</a>
-			            		@endforeach
-			            	</div>
-		            	</div>
+		            	<select class="selectpicker">
+		            		foreach($record as $records)
+		            			<option>{{$records->title}}</option>
+		            		@endforeach
+		            	</select>
 		            </div>
 
 		            <div class="form-group">
