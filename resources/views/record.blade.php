@@ -51,7 +51,6 @@
 		            {{ csrf_field() }}
 
 		            <div class="form-group">
-		            	<center><h1>Current Song List</h1></center>
 		            	<table>
 						  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
 						  	<tr><input type="text" name="author" id="record-author" class="form-control" placeholder="Author"></tr>
@@ -73,6 +72,7 @@
 	    @endsection
 
 		<table>
+			<center><h1>Current Song List</h1></center>
 		  	<tr>
 		    	<th>Title</th>
 			    <th>Author</th>
