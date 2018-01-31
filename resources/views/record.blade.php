@@ -5,7 +5,8 @@
 			table {
 			    font-family: arial, sans-serif;
 			    border-collapse: collapse;
-			    width: 100%;
+			    width: 99%;
+			    margin: 1%;
 			}
 
 			td, th {
