@@ -51,7 +51,7 @@
 
 		@extends('layouts.app')
 
-		@extends('currentRecords')
+		@section('currentRecords')
 			<table>
 				<center><h1>Current Song List</h1></center>
 			  	<tr>
