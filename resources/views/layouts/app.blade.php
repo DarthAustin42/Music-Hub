@@ -6,7 +6,7 @@
         <title>Laravel Quickstart - Basic</title>
         <style>
             .addRecord {
-                top: 20px;
+                top: 50px;
                 margin: 10px;
                 margin-bottom: 0px;
                 padding: 10px;
