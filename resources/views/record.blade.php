@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="https://github.com/FortAwesome/Font-Awesome/blob/master/css/font-awesome.css">
 		<style>
 			table {
 			    font-family: arial, sans-serif;
