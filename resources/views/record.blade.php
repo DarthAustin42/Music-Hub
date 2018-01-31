@@ -34,11 +34,11 @@
             }
 
             button[type=submit] {
-                width: 100%;
+                width: 99%;
                 background-color: #4CAF50;
                 color: white;
                 padding: 14px 20px;
-                margin: 8px 0;
+                margin: 8px 1%;
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
