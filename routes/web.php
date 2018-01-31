@@ -38,6 +38,10 @@ Route::post('/record', function (Request $request) {
     //
     $validator = Validator::make($request->all(), [
         'title' => 'required|max:255',
+        'author' => 'required',
+        'album' => 'required',
+        'genre' => 'required',
+        'time' => 'required',
     ]);
 
     if ($validator->fails()) {

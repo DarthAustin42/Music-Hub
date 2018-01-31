@@ -3,16 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Laravel Quickstart - Basic</title>
-        <style>
-            .addRecord {
-                top: 20px;
-                margin: 10px;
-                margin-bottom: 0px;
-                padding: 10px;
-                padding-bottom: 0px;
-            }
-        </style>
+        <title>Music Hub</title>
         <!-- CSS And JavaScript -->
     </head>
 
