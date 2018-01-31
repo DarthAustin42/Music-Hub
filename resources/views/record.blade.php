@@ -77,16 +77,17 @@
 			<div class="panel-body">
 		        @include('common.errors')
 
+		        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            		@foreach($record as $records)
+            			<a class="dropdown-item">{{$records->title}}</a>
+            		@endforeach
+            	</div>
 		        <form action="{{ url('/record') }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
 	            	{{ method_field('UPDATE') }}
 
 		            <div class="form-group">
-		            	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-		            		@foreach($record as $records)
-		            			<a class="dropdown-item">{{$records->title}}</a>
-		            		@endforeach
-		            	</div>
+		            	
 		            </div>
 
 		            <div class="form-group">
