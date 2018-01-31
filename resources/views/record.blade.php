@@ -5,8 +5,8 @@
 			table {
 			    font-family: arial, sans-serif;
 			    border-collapse: collapse;
-			    width: 100%;
-			    margin: 10px;
+			    width: 99%;
+			    margin: 1%;
 			}
 
 			td, th {
@@ -21,7 +21,6 @@
 			td:last-child {
 				background-color: #ffffff;
 				border: none;
-				margin-right: 10px;
 			}
 
             input[type=text], select {
