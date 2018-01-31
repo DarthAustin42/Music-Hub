@@ -28,7 +28,7 @@
 		        @include('common.errors')
 
 		        <!-- New Task Form -->
-		        <form action="{{ url('record') }}" method="POST" class="form-horizontal">
+		        <form action="{{ url('/') }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
 
 		            <!-- Task Name -->
