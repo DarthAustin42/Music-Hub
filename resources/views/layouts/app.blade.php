@@ -6,7 +6,7 @@
         <title>Laravel Quickstart - Basic</title>
         <style>
             .addRecord {
-                top: 50px;
+                top: 20px;
                 margin: 10px;
                 margin-bottom: 0px;
                 padding: 10px;
@@ -18,6 +18,7 @@
 
     <body>
         <div class="addRecord">
+            <br>
             <hr>
             <center><h1>Add a new song</h1></center>
         </div>
