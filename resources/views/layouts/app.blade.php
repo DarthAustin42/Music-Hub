@@ -5,39 +5,19 @@
     <head>
         <title>Laravel Quickstart - Basic</title>
         <style>
-            table {
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-            }
-
-            td, th {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-            }
-
-            tr:nth-child(even) {
-                background-color: #dddddd;
+            .addRecord {
+                top: 20px;
+                margin: 10px;
+                padding: 10px;
             }
         </style>
         <!-- CSS And JavaScript -->
     </head>
 
     <body>
-        <div class="container">
-            <nav class="navbar navbar-default">
-                <!-- Navbar Contents -->
-            </nav>
+        <div class="addRecord">
+            <h1>Add a new song</h1>
         </div>
-
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Album</th>
-            <th>Genre</th>
-            <th>Time</th>
-        </tr>
         @yield('content')
     </body>
 </html>
