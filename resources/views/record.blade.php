@@ -69,7 +69,7 @@
 					    <td>{{$records->genre}}</td>
 					    <td>{{$records->time}}</td>
 					    <td>
-					        <form action="{{ url('/?id='.$records->id) }}" method="DELETE">
+					        <form action="{{ url('record/'.$records->id) }}" method="POST">
 					            {{ csrf_field() }}
 					            {{ method_field('DELETE') }}
 
