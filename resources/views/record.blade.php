@@ -34,13 +34,6 @@
 		            <!-- Task Name -->
 		            <div class="form-group">
 		            	<table>
-		            		<tr>
-						    	<th>Title</th>
-							    <th>Author</th>
-							    <th>Album</th>
-							    <th>Genre</th>
-							    <th>Time</th>
-						  	</tr>
 						  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
 						  	<tr><input type="text" name="author" id="record-author" class="form-control" placeholder="Author"></tr>
 						  	<tr><input type="text" name="album" id="record-album" class="form-control" placeholder="Album"></tr>

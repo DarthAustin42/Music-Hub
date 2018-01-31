@@ -31,6 +31,13 @@
             </nav>
         </div>
 
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Album</th>
+            <th>Genre</th>
+            <th>Time</th>
+        </tr>
         @yield('content')
     </body>
 </html>
