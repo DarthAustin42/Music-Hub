@@ -1,57 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<style>
-			table {
-			    font-family: arial, sans-serif;
-			    border-collapse: collapse;
-			    width: 99%;
-			    margin: 1%;
-			}
-
-			td, th {
-			    border: 1px solid #dddddd;
-			    text-align: left;
-			    padding: 8px;
-			}
-
-			tr:nth-child(even) {
-			    background-color: #dddddd;
-			}
-			td:last-child {
-				background-color: #ffffff;
-				border: none;
-			}
-
-            input[type=text], select {
-                width: 18%;
-                padding: 12px 20px;
-                margin: 8px 1%;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
-
-            button[type=submit] {
-                width: 90%;
-                background-color: #4CAF50;
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-            .addRecord {
-                top: 20px;
-                margin: 10px;
-                margin-bottom: 0px;
-                padding: 10px;
-                padding-bottom: 0px;
-            }
-		</style>
+		<link rel="stylesheet" href="/css/myStyle.css">
 	</head>
 	<body>
 
