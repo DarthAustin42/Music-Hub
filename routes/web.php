@@ -48,6 +48,10 @@ Route::post('/', function (Request $request) {
 
     $record = new Record;
     $record->title = $request->title;
+    $record->author = $request->author;
+    $record->album = $request->album;
+    $record->genre = $request->genre;
+    $record->time = $request->time;
     $record->save();
 
     return redirect('/');
