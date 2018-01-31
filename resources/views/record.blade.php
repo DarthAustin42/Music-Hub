@@ -37,13 +37,48 @@
                 border-radius: 4px;
                 cursor: pointer;
             }
+
+            .addRecord {
+                top: 20px;
+                margin: 10px;
+                margin-bottom: 0px;
+                padding: 10px;
+                padding-bottom: 0px;
+            }
 		</style>
 	</head>
 	<body>
 
 		@extends('layouts.app')
 
-		@section('content')
+		@extends('currentRecords')
+			<table>
+				<center><h1>Current Song List</h1></center>
+			  	<tr>
+			    	<th>Title</th>
+				    <th>Author</th>
+				    <th>Album</th>
+				    <th>Genre</th>
+				    <th>Time</th>
+			  	</tr>
+			  	@foreach($record as $records)
+				  	<tr>
+					    <td>{{$records->title}}</td>
+					    <td>{{$records->author}}</td>
+					    <td>{{$records->album}}</td>
+					    <td>{{$records->genre}}</td>
+					    <td>{{$records->time}}</td>
+					</tr>
+				@endforeach
+			</table>
+		@endsection
+
+		@section('newRecords')
+			<div class="addRecord">
+	            <br>
+	            <hr>
+	            <center><h1>Add a new song</h1></center>
+	        </div>
 			<div class="panel-body">
 		        @include('common.errors')
 
@@ -70,26 +105,6 @@
 		        </form>
 		    </div>
 	    @endsection
-
-		<table>
-			<center><h1>Current Song List</h1></center>
-		  	<tr>
-		    	<th>Title</th>
-			    <th>Author</th>
-			    <th>Album</th>
-			    <th>Genre</th>
-			    <th>Time</th>
-		  	</tr>
-		  	@foreach($record as $records)
-			  	<tr>
-				    <td>{{$records->title}}</td>
-				    <td>{{$records->author}}</td>
-				    <td>{{$records->album}}</td>
-				    <td>{{$records->genre}}</td>
-				    <td>{{$records->time}}</td>
-				</tr>
-			@endforeach
-		</table>
 	</body>
 </html>
 

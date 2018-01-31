@@ -17,11 +17,7 @@
     </head>
 
     <body>
-        <div class="addRecord">
-            <br>
-            <hr>
-            <center><h1>Add a new song</h1></center>
-        </div>
-        @yield('content')
+        @yield('currentRecords')
+        @yield('newRecords')
     </body>
 </html>
