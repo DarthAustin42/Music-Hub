@@ -5,8 +5,8 @@ table {
     margin: 1%;
 }
 
-tr {
-    height: 15px;
+td {
+    height: auto;
 }
 
 td, th {
