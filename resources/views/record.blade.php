@@ -17,6 +17,9 @@
 			tr:nth-child(even) {
 			    background-color: #dddddd;
 			}
+			td:last-chile {
+				background-color: #ffffff;
+			}
 
             input[type=text], select {
                 width: 18%;
