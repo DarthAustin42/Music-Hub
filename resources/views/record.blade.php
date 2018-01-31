@@ -83,7 +83,7 @@
 
 		            <div class="form-group">
 		            	<select class="selectpicker">
-		            		foreach($record as $records)
+		            		@foreach($record as $records)
 		            			<option>{{$records->title}}</option>
 		            		@endforeach
 		            	</select>
