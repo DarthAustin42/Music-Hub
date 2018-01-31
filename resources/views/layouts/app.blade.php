@@ -12,15 +12,6 @@
                 padding: 10px;
                 padding-bottom: 0px;
             }
-            input[type=text], select {
-                width: 20%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
         </style>
         <!-- CSS And JavaScript -->
     </head>
