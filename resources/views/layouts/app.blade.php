@@ -10,5 +10,6 @@
     <body>
         @yield('currentRecords')
         @yield('newRecords')
+        @yield('updateRecords')
     </body>
 </html>
