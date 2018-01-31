@@ -20,9 +20,9 @@
 	</head>
 	<body>
 
-		<!-- @extends('layouts.app')
+		@extends('layouts.app')
 
-		@section('content') -->
+		@section('content')
 			<div class="panel-body">
 		        <!-- Display Validation Errors -->
 		        @include('common.errors')
@@ -84,7 +84,7 @@
 		            </div>
 		        </form>
 		    </div>
-	    <!-- @endsection -->
+	    @endsection
 
 		<table>
 		  	<tr>
