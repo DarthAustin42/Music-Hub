@@ -34,7 +34,7 @@ Route::get('/', function () {
 /**
  * Add New Task
  */
-Route::post('/', function (Request $request) {
+Route::post('/record', function (Request $request) {
     //
     $validator = Validator::make($request->all(), [
         'title' => 'required|max:255',

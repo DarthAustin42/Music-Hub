@@ -92,7 +92,7 @@
 			<div class="panel-body">
 		        @include('common.errors')
 
-		        <form action="{{ url('/') }}" method="POST" class="form-horizontal">
+		        <form action="{{ url('/record') }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
 
 		            <div class="form-group">
