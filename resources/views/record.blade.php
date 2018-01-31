@@ -21,6 +21,7 @@
 			td:last-child {
 				background-color: #ffffff;
 				border: none;
+				margin-right: 10px;
 			}
 
             input[type=text], select {
