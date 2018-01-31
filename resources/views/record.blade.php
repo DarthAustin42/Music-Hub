@@ -20,7 +20,7 @@
             input[type=text], select {
                 width: 18%;
                 padding: 12px 20px;
-                margin: 8px 2%;
+                margin: 8px 1%;
                 display: inline-block;
                 border: 1px solid #ccc;
                 border-radius: 4px;
