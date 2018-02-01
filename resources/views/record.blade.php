@@ -79,7 +79,6 @@
 
 		        <form action="{{ url('/record'.$records->id) }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
-	            	{{ method_field('UPDATE') }}
 
 		            <div class="form-group">
 		            	<select class="selectpicker">
