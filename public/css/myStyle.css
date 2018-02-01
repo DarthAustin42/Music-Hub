@@ -1,4 +1,4 @@
-/*table {
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 99%;
@@ -17,7 +17,7 @@ tr:nth-child(even) {
 td:last-child {
 	background-color: #ffffff;
 	border: none;
-}*/
+}
 
 input[type=text], select {
     width: 18%;
