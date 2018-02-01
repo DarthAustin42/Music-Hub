@@ -72,7 +72,7 @@ Route::delete('/record/{record}', function (Record $record) {
 
 Route::post('/record/{record}', function (Request $request) {
 	$record = Record::find($request->recordList);
-    $record->title = $request->testInput;
+    $record->title = $request->get('testInput');
     $record->save();
 
     return redirect('/');
