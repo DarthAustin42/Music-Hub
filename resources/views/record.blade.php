@@ -77,17 +77,17 @@
 			<div class="panel-body">
 		        @include('common.errors')
 
-		        
+		        <form action="{{ url('/record/'.$_POST['recordsToChange']) }}" method="POST" class="form-horizontal">
+		            {{ csrf_field() }}
 
 		            <div class="form-group">
-		            	<select class="selectpicker">
+		            	<select name="recordsToChange" class="selectpicker">
 		            		@foreach($record as $records)
 		            			<option>{{$records->title}}</option>
 		            		@endforeach
 		            	</select>
 		            </div>
-		        <form action="{{ url('/record/'.$records->id) }}" method="POST" class="form-horizontal">
-		            {{ csrf_field() }}
+
 		            <div class="form-group">
 	                    <center>
 		                    <button type="submit" class="btn btn-default">Update Song</button>
