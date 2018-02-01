@@ -11,7 +11,7 @@
     <body>
     	<div class="container">
 		  <div class="jumbotron">
-		    <center><h1>Music Hub</h1></center>
+		    <center><h1 style="font-family: 'Raleway', sans-serif;">Music Hub</h1></center>
 		  </div>
 		</div>
         @yield('currentRecords')
