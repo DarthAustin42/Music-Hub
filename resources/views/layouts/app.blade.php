@@ -8,6 +8,7 @@
     </head>
 
     <body>
+    	<h1>Music Hub</h1>
         @yield('currentRecords')
         @yield('newRecords')
         @yield('updateRecords')
