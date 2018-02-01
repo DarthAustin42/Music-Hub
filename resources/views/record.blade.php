@@ -9,7 +9,7 @@
 
 		@section('currentRecords')
 			<center><h1>Current Song List</h1></center>
-			<table id="songList">
+			<table id="songList" class="table table-hover">
 				<thead>
 				  	<tr>
 				    	<th>Title</th>
