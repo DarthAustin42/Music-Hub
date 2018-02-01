@@ -81,17 +81,25 @@
 		            	<select name="recordsToChange" class="selectpicker">
 		            		@foreach($record as $records)
 		            			<option>{{$records->title}}</option>
+		            			<form action="{{ url('record/'.$records->id) }}" method="POST">
+						            {{ csrf_field() }}
+						            {{ method_field('DELETE') }}
+
+						            <center>
+					                    <button type="submit" class="btn btn-default">Update Song</button>
+				                    </center>
+						        </form>
 		            		@endforeach
 		            	</select>
 		            </div>
-             	<form action="{{ url('/record/'.$_POST['recordsToChange']) }}" method="POST" class="form-horizontal">
+             	<!-- <form action="{{ url('/record/'.$_POST['recordsToChange']) }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
 		            <div class="form-group">
 	                    <center>
 		                    <button type="submit" class="btn btn-default">Update Song</button>
 	                    </center>
 		            </div>
-		        </form>
+		        </form> -->
 		    </div>
 	    @endsection
 	</body>
