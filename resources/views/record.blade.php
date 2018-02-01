@@ -100,7 +100,6 @@
 
 		            <div class="form-group">
 	                    <center>
-	                    	<input type="text" name="testInput">
 		                    <button type="submit" class="btn btn-default">Update Song</button>
 	                    </center>
 		            </div>
