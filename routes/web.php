@@ -72,11 +72,11 @@ Route::delete('/record/{record}', function (Record $record) {
 
 Route::post('/record/{record}', function (Record $record, Request $request) {
 	$record = Record::find($request->recordList);
-	$record->title = $request->title;
-    $record->author = $request->author;
-    $record->album = $request->album;
-    $record->genre = $request->genre;
-    $record->time = $request->time;
+	$record->title = $request->title2;
+    $record->author = $request->author2;
+    $record->album = $request->album2;
+    $record->genre = $request->genre2;
+    $record->time = $request->time2;
     $record->save();
 
     return redirect('/');

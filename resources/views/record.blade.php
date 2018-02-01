@@ -96,11 +96,11 @@
 			            </center>
 		            	<br>
 		            	<table>
-						  	<tr><input type="text" name="title" id="record-title2" class="form-control" placeholder="Title"></tr>
-						  	<tr><input type="text" name="author" id="record-author2" class="form-control" placeholder="Author"></tr>
-						  	<tr><input type="text" name="album" id="record-album2" class="form-control" placeholder="Album"></tr>
-						  	<tr><input type="text" name="genre" id="record-genre2" class="form-control" placeholder="Genre"></tr>
-						  	<tr><input type="text" name="time" id="record-time2" class="form-control" placeholder="Time"></tr>
+						  	<tr><input type="text" name="title2" id="record-title2" class="form-control" placeholder="Title"></tr>
+						  	<tr><input type="text" name="author2" id="record-author2" class="form-control" placeholder="Author"></tr>
+						  	<tr><input type="text" name="album2" id="record-album2" class="form-control" placeholder="Album"></tr>
+						  	<tr><input type="text" name="genre2" id="record-genre2" class="form-control" placeholder="Genre"></tr>
+						  	<tr><input type="text" name="time2" id="record-time2" class="form-control" placeholder="Time"></tr>
 					  	</table>
 		            </div>
 
