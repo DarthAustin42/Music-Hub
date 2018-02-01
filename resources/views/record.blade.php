@@ -8,32 +8,36 @@
 		@extends('layouts.app')
 
 		@section('currentRecords')
-			<table id="songList">
-				<center><h1>Current Song List</h1></center>
-			  	<tr>
-			    	<th>Title</th>
-				    <th>Author</th>
-				    <th>Album</th>
-				    <th>Genre</th>
-				    <th>Time</th>
-			  	</tr>
-			  	@foreach($record as $records)
+			<center><h1>Current Song List</h1></center>
+			<table id="songList" class="table table-striped">
+				<thead>
 				  	<tr>
-					    <td>{{$records->title}}</td>
-					    <td>{{$records->author}}</td>
-					    <td>{{$records->album}}</td>
-					    <td>{{$records->genre}}</td>
-					    <td>{{$records->time}}</td>
-					    <td>
-					        <form action="{{ url('record/'.$records->id) }}" method="POST">
-					            {{ csrf_field() }}
-					            {{ method_field('DELETE') }}
+				    	<th>Title</th>
+					    <th>Author</th>
+					    <th>Album</th>
+					    <th>Genre</th>
+					    <th>Time</th>
+				  	</tr>
+			 	</thead>
+			 	<tbody>
+				  	@foreach($record as $records)
+					  	<tr>
+						    <td>{{$records->title}}</td>
+						    <td>{{$records->author}}</td>
+						    <td>{{$records->album}}</td>
+						    <td>{{$records->genre}}</td>
+						    <td>{{$records->time}}</td>
+						    <td>
+						        <form action="{{ url('record/'.$records->id) }}" method="POST">
+						            {{ csrf_field() }}
+						            {{ method_field('DELETE') }}
 
-					            <button type="submit" class="btn btn-danger"><span class="glyphicons glyphicons-bin"></span>Delete</button>
-					        </form>
-					    </td>
-					</tr>
-				@endforeach
+						            <button type="submit" class="btn btn-danger">Delete</button>
+						        </form>
+						    </td>
+						</tr>
+					@endforeach
+				</tbody>
 			</table>
 		@endsection
 
