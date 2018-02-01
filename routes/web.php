@@ -70,9 +70,9 @@ Route::delete('/record/{record}', function (Record $record) {
     return redirect('/');
 });
 
-Route::post('/record/{record}', function (Request $request) {
+Route::post('/record/{record}', function (Record $record, Request $request) {
 	$record = Record::find($request->recordList);
-    $record->title = $request->get('testInput');
+    $record->title = $request->testInput;
     $record->save();
 
     return redirect('/');
