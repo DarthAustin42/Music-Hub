@@ -16,9 +16,3 @@ function changeRecord() {
     	}
     }
 }
-
-$(document).ready(function() {
-    $('#songList').DataTable( {
-        "pagingType": "full_numbers"
-    } );
-} );
