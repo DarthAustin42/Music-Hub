@@ -1,8 +1,6 @@
 function changeRecord() {
-    var x = document.getElementById("recordListTitle").selectedIndex - 1;
+    var x = document.getElementById("recordListTitle").selectedIndex;
     document.getElementById("recordList").selectedIndex = x;
-    console.log("asdf: " + x);
-    console.log(document.getElementById("recordList").selectedIndex);
 
 	var y;
     for(y = 0; y < document.getElementById("songList").rows.length; y++) {
