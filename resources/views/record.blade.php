@@ -19,6 +19,7 @@
 			  	</tr>
 			  	@foreach($record as $records)
 				  	<tr>
+				  		<td>{{$records->id}}</td>
 					    <td>{{$records->title}}</td>
 					    <td>{{$records->author}}</td>
 					    <td>{{$records->album}}</td>
