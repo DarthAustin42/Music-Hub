@@ -8,119 +8,109 @@
 		@extends('layouts.app')
 
 		@section('currentRecords')
-			<div class="divContainer">
+			<table id="songList">
 				<center><h1>Current Song List</h1></center>
-				<table id="songList" class="table table-hover">
-					<thead>
-					  	<tr>
-					    	<th>Title</th>
-						    <th>Author</th>
-						    <th>Album</th>
-						    <th>Genre</th>
-						    <th>Time</th>
-					  	</tr>
-				 	</thead>
-				 	<tbody>
-					  	@foreach($record as $records)
-						  	<tr>
-							    <td>{{$records->title}}</td>
-							    <td>{{$records->author}}</td>
-							    <td>{{$records->album}}</td>
-							    <td>{{$records->genre}}</td>
-							    <td>{{$records->time}}</td>
-							    <td>
-							        <form action="{{ url('record/'.$records->id) }}" method="POST">
-							            {{ csrf_field() }}
-							            {{ method_field('DELETE') }}
+			  	<tr>
+			    	<th>Title</th>
+				    <th>Author</th>
+				    <th>Album</th>
+				    <th>Genre</th>
+				    <th>Time</th>
+			  	</tr>
+			  	@foreach($record as $records)
+				  	<tr>
+					    <td>{{$records->title}}</td>
+					    <td>{{$records->author}}</td>
+					    <td>{{$records->album}}</td>
+					    <td>{{$records->genre}}</td>
+					    <td>{{$records->time}}</td>
+					    <td>
+					        <form action="{{ url('record/'.$records->id) }}" method="POST">
+					            {{ csrf_field() }}
+					            {{ method_field('DELETE') }}
 
-							            <button type="submit" class="btn btn-danger">Delete</button>
-							        </form>
-							    </td>
-							</tr>
-						@endforeach
-					</tbody>
-				</table>
-			</div>
+					            <button type="submit" class="btn btn-danger">Delete</button>
+					        </form>
+					    </td>
+					</tr>
+				@endforeach
+			</table>
 		@endsection
 
 		@section('newRecords')
-			<div class="divContainer">
-				<div class="addRecord">
-		            <br>
-		            <hr>
-		            <center><h1>Add a new song</h1></center>
-		        </div>
-				<div class="panel-body">
-			        @include('common.errors')
+			<div class="addRecord">
+	            <br>
+	            <hr>
+	            <center><h1>Add a new song</h1></center>
+	        </div>
+			<div class="panel-body">
+		        @include('common.errors')
 
-			        <form action="{{ url('/record') }}" method="POST" class="form-horizontal">
-			            {{ csrf_field() }}
+		        <form action="{{ url('/record') }}" method="POST" class="form-horizontal">
+		            {{ csrf_field() }}
 
-			            <div class="form-group">
-			            	<table>
-							  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
-							  	<tr><input type="text" name="author" id="record-author" class="form-control" placeholder="Author"></tr>
-							  	<tr><input type="text" name="album" id="record-album" class="form-control" placeholder="Album"></tr>
-							  	<tr><input type="text" name="genre" id="record-genre" class="form-control" placeholder="Genre"></tr>
-							  	<tr><input type="text" name="time" id="record-time" class="form-control" placeholder="Time"></tr>
-						  	</table>
-			            </div>
+		            <div class="form-group">
+		            	<table>
+						  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
+						  	<tr><input type="text" name="author" id="record-author" class="form-control" placeholder="Author"></tr>
+						  	<tr><input type="text" name="album" id="record-album" class="form-control" placeholder="Album"></tr>
+						  	<tr><input type="text" name="genre" id="record-genre" class="form-control" placeholder="Genre"></tr>
+						  	<tr><input type="text" name="time" id="record-time" class="form-control" placeholder="Time"></tr>
+					  	</table>
+		            </div>
 
-			            <div class="form-group">
-		                    <center>
-			                    <button type="submit" class="btn btn-default">Add Song</button>
-		                    </center>
-			            </div>
-			        </form>
-			    </div>
+		            <div class="form-group">
+	                    <center>
+		                    <button type="submit" class="btn btn-default">Add Song</button>
+	                    </center>
+		            </div>
+		        </form>
 		    </div>
 	    @endsection
 
 	    @section('updateRecords')
-	    	<div class="divContainer">
-				<div class="updateRecord">
-		            <br>
-		            <hr>
-		            <center><h1>Update a song</h1></center>
-		        </div>
-				<div class="panel-body">
-			        @include('common.errors')
+			<div class="updateRecord">
+	            <br>
+	            <hr>
+	            <center><h1>Update a song</h1></center>
+	        </div>
+			<div class="panel-body">
+		        @include('common.errors')
 
-			        <form action="{{ url('/record/'.$records->id) }}" method="POST" class="form-horizontal">
-			            {{ csrf_field() }}
+		        <form action="{{ url('/record/'.$records->id) }}" method="POST" class="form-horizontal">
+		            {{ csrf_field() }}
 
-			            <div class="form-group">
-			            	<center>
-			            		<select id="recordListTitle" name="recordListTitle" onchange="changeRecord()" class="selectpicker">
-			            			<option value="" selected disabled hidden>Choose Song...</option>
-				            		@foreach($record as $records)
-				            			<option>{{$records->title}}</option>
-				            		@endforeach
-				            	</select>
-				            	<select id="recordList" name="recordList" class="selectpicker" hidden="true">
-				            		<option value="" selected disabled hidden>Choose Song...</option>
-				            		@foreach($record as $records)
-				            			<option>{{$records->id}}</option>
-				            		@endforeach
-				            	</select>
-				            </center>
-			            	<br>
-			            	<table>
-							  	<tr><input type="text" name="title2" id="record-title2" class="form-control" placeholder="Title"></tr>
-							  	<tr><input type="text" name="author2" id="record-author2" class="form-control" placeholder="Author"></tr>
-							  	<tr><input type="text" name="album2" id="record-album2" class="form-control" placeholder="Album"></tr>
-							  	<tr><input type="text" name="genre2" id="record-genre2" class="form-control" placeholder="Genre"></tr>
-							  	<tr><input type="text" name="time2" id="record-time2" class="form-control" placeholder="Time"></tr>
-						  	</table>
-			            </div>
+		            <div class="form-group">
+		            	<center>
+		            		<select id="recordListTitle" name="recordListTitle" onchange="changeRecord()" class="selectpicker">
+		            			<option value="" selected disabled hidden>Choose Song...</option>
+			            		@foreach($record as $records)
+			            			<option>{{$records->title}}</option>
+			            		@endforeach
+			            	</select>
+			            	<select id="recordList" name="recordList" class="selectpicker" hidden="true">
+			            		<option value="" selected disabled hidden>Choose Song...</option>
+			            		@foreach($record as $records)
+			            			<option>{{$records->id}}</option>
+			            		@endforeach
+			            	</select>
+			            </center>
+		            	<br>
+		            	<table>
+						  	<tr><input type="text" name="title2" id="record-title2" class="form-control" placeholder="Title"></tr>
+						  	<tr><input type="text" name="author2" id="record-author2" class="form-control" placeholder="Author"></tr>
+						  	<tr><input type="text" name="album2" id="record-album2" class="form-control" placeholder="Album"></tr>
+						  	<tr><input type="text" name="genre2" id="record-genre2" class="form-control" placeholder="Genre"></tr>
+						  	<tr><input type="text" name="time2" id="record-time2" class="form-control" placeholder="Time"></tr>
+					  	</table>
+		            </div>
 
-			            <div class="form-group">
-		                    <center>
-			                    <button type="submit" class="btn btn-default">Update Song</button>
-		                    </center>
-			            </div>
-			        </form>
-			    </div>
+		            <div class="form-group">
+	                    <center>
+		                    <button type="submit" class="btn btn-default">Update Song</button>
+	                    </center>
+		            </div>
+		        </form>
 		    </div>
 	    @endsection
 	</body>

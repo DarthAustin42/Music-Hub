@@ -19,10 +19,6 @@ td:last-child {
 	border: none;
 }
 
-.divContainer {
-    background-color: #C8C8C8;
-}
-
 input[type=text], select {
     width: 18%;
     padding: 12px 20px;
