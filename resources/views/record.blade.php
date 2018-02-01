@@ -8,10 +8,9 @@
 		@extends('layouts.app')
 
 		@section('currentRecords')
-			<table>
+			<table id="songList">
 				<center><h1>Current Song List</h1></center>
 			  	<tr>
-			  		<th>Song ID</th>
 			    	<th>Title</th>
 				    <th>Author</th>
 				    <th>Album</th>
@@ -20,7 +19,6 @@
 			  	</tr>
 			  	@foreach($record as $records)
 				  	<tr>
-				  		<td>{{$records->id}}</td>
 					    <td>{{$records->title}}</td>
 					    <td>{{$records->author}}</td>
 					    <td>{{$records->album}}</td>
@@ -97,11 +95,11 @@
 			            </center>
 		            	<br>
 		            	<table>
-						  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
-						  	<tr><input type="text" name="author" id="record-author" class="form-control" placeholder="Author"></tr>
-						  	<tr><input type="text" name="album" id="record-album" class="form-control" placeholder="Album"></tr>
-						  	<tr><input type="text" name="genre" id="record-genre" class="form-control" placeholder="Genre"></tr>
-						  	<tr><input type="text" name="time" id="record-time" class="form-control" placeholder="Time"></tr>
+						  	<tr><input type="text" name="title" id="record-title2" class="form-control" placeholder="Title"></tr>
+						  	<tr><input type="text" name="author" id="record-author2" class="form-control" placeholder="Author"></tr>
+						  	<tr><input type="text" name="album" id="record-album2" class="form-control" placeholder="Album"></tr>
+						  	<tr><input type="text" name="genre" id="record-genre2" class="form-control" placeholder="Genre"></tr>
+						  	<tr><input type="text" name="time" id="record-time2" class="form-control" placeholder="Time"></tr>
 					  	</table>
 		            </div>
 
