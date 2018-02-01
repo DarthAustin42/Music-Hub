@@ -88,6 +88,7 @@
 		            			<option>{{$records->id}}</option>
 		            		@endforeach
 		            	</select>
+		            	<br>
 		            	<table>
 						  	<tr><input type="text" name="title" id="record-title" class="form-control" placeholder="Title"></tr>
 						  	<tr><input type="text" name="author" id="record-author" class="form-control" placeholder="Author"></tr>
