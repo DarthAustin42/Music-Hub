@@ -85,6 +85,7 @@
 		            	<select name="recordList" class="selectpicker">
 		            		@foreach($record as $records)
 		            			<option>{{$records->title}}</option>
+		            			<option disabled="true">{{$records->id}}</option>
 		            		@endforeach
 		            	</select>
 		            </div>
