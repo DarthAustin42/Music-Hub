@@ -1,7 +1,7 @@
 function changeRecord() {
     var x = document.getElementById("recordListTitle").selectedIndex - 1;
     document.getElementById("recordList").selectedIndex = x;
-    console.log(x);
+    console.log("asdf: " + x);
     console.log(document.getElementById("recordList").selectedIndex);
 
 	var y;
