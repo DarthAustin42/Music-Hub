@@ -83,6 +83,7 @@
 		            <div class="form-group">
 		            	<center>
 		            		<select id="recordListTitle" name="recordListTitle" onchange="changeRecord()" class="selectpicker">
+		            			<option value="" selected disabled hidden>Choose Song...</option>
 			            		@foreach($record as $records)
 			            			<option>{{$records->title}}</option>
 			            		@endforeach
