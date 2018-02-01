@@ -4,9 +4,11 @@ function changeRecord() {
 
 	var y;
     for(y = 0; y < document.getElementById("songList").rows.length; y++) {
-    	console.log(document.getElementById("songList").rows[y].cells[0].innerHTML);
-		console.log(document.getElementById("recordListTitle").value);
-    	if(document.getElementById("songList").rows[y].cells[0].innerHTML == document.getElementById("recordListTitle").text) {
+		var listName = document.getElementById("songList").rows[y].cells[0].innerHTML;
+		var selectName = document.getElementById("recordListTitle").text;
+		console.log(listName);
+		console.log(selectName);
+    	if(listName == selectName) {
     		console.log("hi");
     		document.getElementById("record-title2").value = document.getElementById("songList").rows[y].cells[0].innerHTML;
     		document.getElementById("record-author2").value = document.getElementById("songList").rows[y].cells[1].innerHTML;
