@@ -5,6 +5,7 @@
     <head>
         <title>Music Hub</title>
         <!-- CSS And JavaScript -->
+        <link rel="stylesheet" href="/css/myStyle.css">
     </head>
 
     <body>
