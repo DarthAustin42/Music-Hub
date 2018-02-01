@@ -7,6 +7,7 @@ function changeRecord() {
     	console.log(document.getElementById("songList").rows[y].cells[0].innerHTML);
 		console.log(document.getElementById("recordListTitle").value);
     	if(document.getElementById("songList").rows[y].cells[0].innerHTML === document.getElementById("recordListTitle").text) {
+    		console.log("hi");
     		document.getElementById("record-title2").value = document.getElementById("songList").rows[y].cells[0].innerHTML;
     		document.getElementById("record-author2").value = document.getElementById("songList").rows[y].cells[1].innerHTML;
     		document.getElementById("record-album2").value = document.getElementById("songList").rows[y].cells[2].innerHTML;
