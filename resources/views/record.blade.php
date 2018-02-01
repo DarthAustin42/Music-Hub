@@ -78,17 +78,15 @@
 		        @include('common.errors')
 
 		            <div class="form-group">
-		            	<select name="recordsToChange" class="selectpicker">
-		            		@foreach($record as $records)
-		            			<option>{{$records->title}}</option>
-		            			<form action="{{ url('record/'.$records->id) }}" method="POST">
-						            {{ csrf_field() }}
-						            <center>
-					                    <button type="submit" class="btn btn-default">Update Song</button>
-				                    </center>
-						        </form>
-		            		@endforeach
-		            	</select>
+	            		@foreach($record as $records)
+	            			<form action="{{ url('record/'.$records->id) }}" method="POST">
+					            {{ csrf_field() }}
+					            <center>
+				                    <button type="submit" class="btn btn-default">Update Song</button>
+				                    <input type="text" name="testChange">
+			                    </center>
+					        </form>
+	            		@endforeach
 		            </div>
              	
 		    </div>
