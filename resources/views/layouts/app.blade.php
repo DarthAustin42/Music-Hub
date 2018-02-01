@@ -20,7 +20,7 @@
         
 
         <div class="footer">
-		  	<p>Footer</p>
+		  	<center><p>© Austin Nielsen</p></center>
 		</div>
     </body>
 </html>
