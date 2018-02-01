@@ -2,38 +2,46 @@
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="/css/myStyle.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 	</head>
 	<body>
 
 		@extends('layouts.app')
 
 		@section('currentRecords')
-			<table id="songList">
-				<center><h1>Current Song List</h1></center>
-			  	<tr>
-			    	<th>Title</th>
-				    <th>Author</th>
-				    <th>Album</th>
-				    <th>Genre</th>
-				    <th>Time</th>
-			  	</tr>
-			  	@foreach($record as $records)
+			<center><h1>Current Song List</h1></center>
+			<table id="songList" class="display" cellspacing="0">
+				<thead>
 				  	<tr>
-					    <td>{{$records->title}}</td>
-					    <td>{{$records->author}}</td>
-					    <td>{{$records->album}}</td>
-					    <td>{{$records->genre}}</td>
-					    <td>{{$records->time}}</td>
-					    <td>
-					        <form action="{{ url('record/'.$records->id) }}" method="POST">
-					            {{ csrf_field() }}
-					            {{ method_field('DELETE') }}
+				    	<th>Title</th>
+					    <th>Author</th>
+					    <th>Album</th>
+					    <th>Genre</th>
+					    <th>Time</th>
+				  	</tr>
+			 	</thead>
+			 	<tbody>
+				  	@foreach($record as $records)
+					  	<tr>
+						    <td>{{$records->title}}</td>
+						    <td>{{$records->author}}</td>
+						    <td>{{$records->album}}</td>
+						    <td>{{$records->genre}}</td>
+						    <td>{{$records->time}}</td>
+						    <td>
+						        <form action="{{ url('record/'.$records->id) }}" method="POST">
+						            {{ csrf_field() }}
+						            {{ method_field('DELETE') }}
 
-					            <button type="submit" class="btn btn-danger">Delete</button>
-					        </form>
-					    </td>
-					</tr>
-				@endforeach
+						            <button type="submit" class="btn btn-danger">Delete</button>
+						        </form>
+						    </td>
+						</tr>
+					@endforeach
+				</tbody>
 			</table>
 		@endsection
 
