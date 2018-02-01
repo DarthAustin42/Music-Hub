@@ -72,7 +72,7 @@ Route::delete('/record/{record}', function (Record $record) {
 
 Route::update('/record/{record}', function (Record $record) {
 	$record = Record::find($record->id);
-    $record->title = 'This is Test'
+    $record->title = 'This is Test';
     $record->save();
 
     return redirect('/');
