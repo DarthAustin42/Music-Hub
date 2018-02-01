@@ -8,7 +8,11 @@
     </head>
 
     <body>
-    	<h1>Music Hub</h1>
+    	<div class="container">
+		  <div class="jumbotron">
+		    <h1>Music Hub</h1>
+		  </div>
+		</div>
         @yield('currentRecords')
         @yield('newRecords')
         @yield('updateRecords')
