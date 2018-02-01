@@ -77,7 +77,7 @@
 			<div class="panel-body">
 		        @include('common.errors')
 
-		        <form action="{{ url('/record/'.$_POST['recordsToChange']) }}" method="POST" class="form-horizontal">
+		        <form action="{{ url('/record/' . $_POST['recordsToChange']) }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
 
 		            <div class="form-group">
