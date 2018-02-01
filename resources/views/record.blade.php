@@ -77,18 +77,24 @@
 			<div class="panel-body">
 		        @include('common.errors')
 
+		        <form action="{{ url('/record/'.$records->id) }}" method="POST" class="form-horizontal">
+		            {{ csrf_field() }}
+
 		            <div class="form-group">
-	            		@foreach($record as $records)
-	            			<form action="{{ url('record/'.$records->id) }}" method="POST">
-					            {{ csrf_field() }}
-					            <center>
-				                    <button type="submit" class="btn btn-default">Update Song</button>
-				                    <input type="text" name="testChange">
-			                    </center>
-					        </form>
-	            		@endforeach
+		            	<select name="recordList" class="selectpicker">
+		            		@foreach($record as $records)
+		            			<option>{{$records->title}}</option>
+		            		@endforeach
+		            	</select>
 		            </div>
-             	
+
+		            <div class="form-group">
+	                    <center>
+	                    	<input type="text" name="testInput">
+		                    <button type="submit" class="btn btn-default">Update Song</button>
+	                    </center>
+		            </div>
+		        </form>
 		    </div>
 	    @endsection
 	</body>
