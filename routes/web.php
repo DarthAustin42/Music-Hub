@@ -69,3 +69,9 @@ Route::delete('/record/{record}', function (Record $record) {
 
     return redirect('/');
 });
+
+Route::update('/record/{record}', function (Record $record) {
+    $record->update(['title' => 'Test']);
+
+    return redirect('/');
+});

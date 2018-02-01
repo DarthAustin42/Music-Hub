@@ -77,7 +77,7 @@
 			<div class="panel-body">
 		        @include('common.errors')
 
-		        <form action="{{ url('/record') }}" method="POST" class="form-horizontal">
+		        <form action="{{ url('/record'.$records->id) }}" method="POST" class="form-horizontal">
 		            {{ csrf_field() }}
 	            	{{ method_field('UPDATE') }}
 
