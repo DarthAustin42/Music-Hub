@@ -10,7 +10,7 @@
     <body>
     	<div class="container">
 		  <div class="jumbotron">
-		    <h1>Music Hub</h1>
+		    <center><h1>Music Hub</h1></center>
 		  </div>
 		</div>
         @yield('currentRecords')
