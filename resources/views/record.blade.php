@@ -92,14 +92,7 @@
 		            		@endforeach
 		            	</select>
 		            </div>
-             	<!-- <form action="{{ url('/record/'.$_POST['recordsToChange']) }}" method="POST" class="form-horizontal">
-		            {{ csrf_field() }}
-		            <div class="form-group">
-	                    <center>
-		                    <button type="submit" class="btn btn-default">Update Song</button>
-	                    </center>
-		            </div>
-		        </form> -->
+             	
 		    </div>
 	    @endsection
 	</body>
