@@ -83,8 +83,6 @@
 		            			<option>{{$records->title}}</option>
 		            			<form action="{{ url('record/'.$records->id) }}" method="POST">
 						            {{ csrf_field() }}
-						            {{ method_field('DELETE') }}
-
 						            <center>
 					                    <button type="submit" class="btn btn-default">Update Song</button>
 				                    </center>
