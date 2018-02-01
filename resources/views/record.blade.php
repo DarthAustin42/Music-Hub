@@ -72,7 +72,7 @@
 			<div class="updateRecord">
 	            <br>
 	            <hr>
-	            <center><h1>Update a song</h1><h3>Select by Song ID</h3></center>
+	            <center><h1>Update a song</h1></center>
 	        </div>
 			<div class="panel-body">
 		        @include('common.errors')
