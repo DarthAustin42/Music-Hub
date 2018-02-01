@@ -19,8 +19,8 @@ td:last-child {
 	border: none;
 }
 
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #FF8A71;
+.table-hover tbody tr:hover td {
+    background: red;
 }
 
 input[type=text], select {
