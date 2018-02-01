@@ -16,5 +16,10 @@
         @yield('currentRecords')
         @yield('newRecords')
         @yield('updateRecords')
+        
+
+        <div class="footer">
+		  	<p>Footer</p>
+		</div>
     </body>
 </html>
