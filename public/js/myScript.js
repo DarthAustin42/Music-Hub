@@ -5,7 +5,7 @@ function changeRecord() {
 	var y;
     for(y = 0; y < document.getElementById("songList").rows.length; y++) {
 		var listName = document.getElementById("songList").rows[y].cells[0].innerHTML;
-		var selectName = document.getElementById("recordListTitle").text;
+		var selectName = document.getElementById("recordListTitle").value;
 		console.log(listName);
 		console.log(selectName);
     	if(listName == selectName) {
