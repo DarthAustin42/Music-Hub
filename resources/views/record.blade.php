@@ -84,7 +84,7 @@
 		            <div class="form-group">
 		            	<select name="recordList" class="selectpicker">
 		            		@foreach($record as $records)
-		            			<option>{{$records->id}}</option>
+		            			<option>{{$records->title}}</option>
 		            		@endforeach
 		            	</select>
 		            </div>
