@@ -60,7 +60,7 @@
 			    		<div class='col'>
 			    			<div class='row'></div>
 							<div class='row'><center><button onclick="shuffleDeck()">SHUFFLE</button></center></div>
-							<div id="shuffleLable" hidden><h1>Shuffling... Please wait</h1></div>
+							<div id="shuffleLable"><h1>Shuffling... Please wait</h1></div>
 							<div class='row'></div>
 			    		</div>
 
