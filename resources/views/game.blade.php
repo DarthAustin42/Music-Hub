@@ -9,6 +9,7 @@
 			}
 			function refreshCards() {
 				$('#theMainBoard').load(document.URL + ' #theMainBoard');
+				console.log("hi");
 				window.setTimeout(refreshCards, 10000);
 			}
 		</script>
