@@ -32,10 +32,86 @@ Route::get('/', function () {
     return view('game', ['game' => $game]);
 });
 
+
 /**
  * Add New Task
  */
 
+Route::post('/game/shuffle', function (Game $game, Request $request) {
+    $cardNums = array range(1, 24); 
+    bool shuffle(array &$cardNums);
+    $game = Game::find(1);
+    $game->card1 = $cardNums[0]
+    $game->card2 = $cardNums[1]
+    $game->card3 = $cardNums[2]
+    $game->card4 = $cardNums[3]
+    $game->card5 = $cardNums[4]
+    $game->card6 = $cardNums[5]
+
+    $game = Game::find(2);
+    $game->card1 = $cardNums[6]
+    $game->card2 = $cardNums[7]
+    $game->card3 = $cardNums[8]
+    $game->card4 = $cardNums[9]
+    $game->card5 = $cardNums[10]
+    $game->card6 = $cardNums[11]
+
+    $game = Game::find(3);
+    $game->card1 = $cardNums[12]
+    $game->card2 = $cardNums[13]
+    $game->card3 = $cardNums[14]
+    $game->card4 = $cardNums[15]
+    $game->card5 = $cardNums[16]
+    $game->card6 = $cardNums[17]
+
+    $game = Game::find(4);
+    $game->card1 = $cardNums[18]
+    $game->card2 = $cardNums[19]
+    $game->card3 = $cardNums[20]
+    $game->card4 = $cardNums[21]
+    $game->card5 = $cardNums[22]
+    $game->card6 = $cardNums[23]
+    $game->save();
+
+    return redirect('/');
+});
+
+
+/**
+ * Add New Task
+ */
+// Route::post('/game', function (Request $request) {
+//     //
+//     $validator = Validator::make($request->all(), [
+//         'id' => 'required|max:255',
+//         'card1' => 'required',
+//         'card2' => 'required',
+//         'card3' => 'required',
+//         'card4' => 'required',
+//         'card5' => 'required',
+//         'card6' => 'required',
+//         'pointsTaken' => 'required',
+//     ]);
+
+//     if ($validator->fails()) {
+//         return redirect('/')
+//             ->withInput()
+//             ->withErrors($validator);
+//     }
+
+//     $game = new Record;
+//     $game->id = $request->id;
+//     $game->card1 = $request->card1;
+//     $game->card2 = $request->card2;
+//     $game->card3 = $request->card3;
+//     $game->card4 = $request->card4;
+//     $game->card5 = $request->card5;
+//     $game->card6 = $request->card6;
+//     $game->pointsTaken = $request->pointsTaken;
+//     $game->save();
+
+//     return redirect('/');
+// });
 
 /**
  * Add New Task
