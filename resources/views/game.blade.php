@@ -8,7 +8,38 @@
 		@extends('layouts.app')
 
 		@section('currentRecords')
-		    <div class="container gameBoard">
+			<center><h1>Current Song List</h1></center>
+			<table id="songList">
+				<thead>
+				  	<tr>
+				    	<th>Title</th>
+					    <th>Author</th>
+					    <th>Album</th>
+					    <th>Genre</th>
+					    <th>Time</th>
+				  	</tr>
+			 	</thead>
+			 	<tbody>
+				  	@foreach($record as $records)
+					  	<tr>
+						    <td>{{$records->title}}</td>
+						    <td>{{$records->author}}</td>
+						    <td>{{$records->album}}</td>
+						    <td>{{$records->genre}}</td>
+						    <td>{{$records->time}}</td>
+						    <td>
+						        <form action="{{ url('game/'.$games->id) }}" method="POST">
+						            {{ csrf_field() }}
+						            {{ method_field('DELETE') }}
+
+						            <button type="submit" class="btn btn-danger">Delete</button>
+						        </form>
+						    </td>
+						</tr>
+					@endforeach
+				</tbody>
+			</table>
+		    <!-- <div class="container gameBoard">
 		        <div class="row grow">
 		            <div class="col-xs-4 gcol"></div>
 		            <div class="col-xs-4 gcol Player">
@@ -76,7 +107,7 @@
 		            </div>
 		            <div class="col-xs-4 gcol"></div>
 		        </div>
-		    </div>
+		    </div> -->
 	    @endsection	
 	</body>
 	<script src="/js/myScript.js"></script>
