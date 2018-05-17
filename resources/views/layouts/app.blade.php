@@ -8,10 +8,9 @@
         <link rel="stylesheet" href="/css/myStyle.css">
         <script>
             function update() {
-                $.get("game.blade.php", function(data) {
-                    $(".theMainBoard").html(data);
-                    window.setTimeout(update, 10000);
-                })
+                var Obj = load('game.blade.php');
+                $(".theMainBoard").html(Obj);
+                window.setTimeout(update, 10000);
                 console.log("HI");
             }
         </script>
