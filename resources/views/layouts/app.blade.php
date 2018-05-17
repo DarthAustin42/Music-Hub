@@ -14,7 +14,7 @@
 		    <center><h1>Pepper</h1></center>
 		  </div>
 		</div>
-        @yield('gameBoard')
+        <frame id="testFrame">@yield('gameBoard')</frame>
 
         <div class="footer">
 		  	<center><p>© Austin Nielsen</p></center>
