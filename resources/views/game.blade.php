@@ -52,7 +52,7 @@
 			    		<div class='col'>
 			    			<div class='row'>
 			    				<div class='col'>{{$games->card1}}</div>
-			    				<div class='col'><img src='{{ $c1 }}'></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg'></div>
 			    				<div class='col'>abc42</div>
 			    			</div>
 			    			<div class='row'>
