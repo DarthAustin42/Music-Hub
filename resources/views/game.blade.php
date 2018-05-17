@@ -14,14 +14,14 @@
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    		</div>
 			    		<div class='col'></div>
@@ -31,14 +31,14 @@
 			    	<div class='row'>
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    		</div>
 			    		<div class='col'>
@@ -50,14 +50,14 @@
 			   	@elseif($games->id == '3')
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    		</div>
 			    	</div>
@@ -67,14 +67,14 @@
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:40vh;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:40vh;"></div>
 			    			</div>
 			    		</div>
 			    		<div class='col'></div>
