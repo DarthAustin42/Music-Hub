@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="/css/myStyle.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script>
-			var refreshTimeout = window.setTimeout(refreshCards, 10000);;
+			var refreshTimeout;
 
 			function refreshCards() {
 				$('#theMainBoard').load(document.URL + ' #theMainBoard');
@@ -18,7 +18,7 @@
 			}
 		</script>
 	</head>
-	<body onload="shuffleDeck()">
+	<body onload="refreshCards()">
 
 		@extends('layouts.app')
 	    @section('gameBoard')
