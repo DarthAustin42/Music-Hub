@@ -8,7 +8,6 @@
 		@extends('layouts.app')
 
 		@section('gameBoard')
-			<center><h1>Pepper</h1></center>
 			<table id="songList">
 				<thead>
 				  	<tr>
@@ -45,7 +44,23 @@
 	    @endsection	
 
 	    @section('testingThis')
-			<div class="container gameBoard">
+	    	<div class='row'>
+	    		<div class='col'>
+	    			<h1>Hello</h1>
+	    		</div>
+	    		<div class='col'>
+	    			<h1>World</h1>
+	    		</div>
+	    	</div>
+	    	<div class='row'>
+	    		<div class='col'>
+	    			<h1>Hello</h1>
+	    		</div>
+	    		<div class='col'>
+	    			<h1>World</h1>
+	    		</div>
+	    	</div>
+			<!-- <div class="container gameBoard">
 		        <div class="row grow">
 		            <div class="col-xs-4 gcol"></div>
 		            <div class="col-xs-4 gcol Player">
@@ -113,7 +128,7 @@
 		            </div>
 		            <div class="col-xs-4 gcol"></div>
 		        </div>
-		    </div>
+		    </d -->iv>
 	    @endsection
 	</body>
 	<script src="/js/myScript.js"></script>
