@@ -32,6 +32,11 @@ Route::get('/theGame', function () {
     return view('game', ['game' => $game]);
 });
 
+Route::get('/', function () {
+    $game = \App\Models\Main::all();
+
+    return view('main', ['main' => $main]);
+});
 
 /**
  * Add New Task
