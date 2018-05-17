@@ -13,6 +13,7 @@
 			}
 			function shuffleDeck() {
 				jQuery.ajax("/shuffle");
+				clearTimeout(refreshTimeout);
 				refreshTimeout = window.setTimeout(refreshCards, 500);
 			}
 		</script>
