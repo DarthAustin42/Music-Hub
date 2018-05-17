@@ -49,7 +49,7 @@
 	    		<div class='col'>
 	    			<div class='row'>
 	    				<div class='col' id="card11"></div>
-	    				<div class='col' id="card12"></div>
+	    				<div class='col'>{{ URL::asset("img/2_of_clubs.svg") }}</div>
 	    				<div class='col'>abc42</div>
 	    			</div>
 	    			<div class='row'>
