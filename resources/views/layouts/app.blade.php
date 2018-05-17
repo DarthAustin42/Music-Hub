@@ -7,16 +7,11 @@
         <!-- CSS And JavaScript -->
         <link rel="stylesheet" href="/css/myStyle.css">
         <script>
-            function update() {
-                var Obj = load('game.blade.php');
-                $(".theMainBoard").html(Obj);
-                window.setTimeout(update, 10000);
-                console.log("HI");
-            }
+
         </script>
     </head>
 
-    <body onload="update()">
+    <body>
         @yield('gameBoard')
     </body>
 </html>

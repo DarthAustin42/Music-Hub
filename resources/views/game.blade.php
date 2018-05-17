@@ -6,9 +6,13 @@
 			function getLogin() {
 				alert("TEST LOGIN");
 			}
+			function refreshCards() {
+				$('#theMainBoard').load(document.URL + ' #theMainBoard');
+				window.setTimeout(refreshCards, 10000);
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="refreshCards()">
 
 		@extends('layouts.app')
 	    @section('gameBoard')
