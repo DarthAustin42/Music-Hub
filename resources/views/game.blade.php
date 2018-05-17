@@ -42,7 +42,11 @@
 			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:10vw;"></div>
 			    			</div>
 			    		</div>
-			    		<div class='col'><button><a href"/shuffle">Shuffle</a></button></div>
+			    		<div class='col'>
+			    			<form action="/shuffle">
+							    <input type="submit" value="Shuffle the deck!" />
+							</form>
+			    		</div>
 
 			   	@elseif($games->id == '3')
 			    		<div class='col'>
