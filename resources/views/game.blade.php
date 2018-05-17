@@ -45,8 +45,8 @@
 
 	    @section('testingThis')
 	    	@foreach($game as $games)
+	    		<?php $c1 = 'img/{{$games->card1}}.svg'?>
 	    		@if($games->id == '1')
-	    			<?php $c1 = 'img/{{$games->card1}}.svg'>
 			    	<div class='row'>
 			    		<div class='col'></div>
 			    		<div class='col'>
