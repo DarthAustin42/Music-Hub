@@ -14,9 +14,8 @@
 		    <center><h1>Music Hub</h1></center>
 		  </div>
 		</div>
-        @yield('currentRecords')
-        @yield('newRecords')
-        @yield('updateRecords')
+        @yield('gameBoard')
+        @yield('testingThis')
         
 
         <div class="footer">
