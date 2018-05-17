@@ -12,6 +12,7 @@
                     $(".theMainBoard").html(data);
                     window.setTimeout(update, 10000);
                 })
+                console.log("HI");
             }
         </script>
     </head>
