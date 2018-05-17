@@ -26,17 +26,12 @@ use Illuminate\Http\Request;
 /**
  * Show Task Dashboard
  */
-Route::get('/theGame', function () {
+Route::get('/', function () {
     $game = \App\Models\Game::all();
 
     return view('game', ['game' => $game]);
 });
 
-Route::get('/', function () {
-    $game = \App\Models\Main::all();
-
-    return view('main', ['main' => $main]);
-});
 
 /**
  * Add New Task
