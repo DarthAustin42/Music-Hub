@@ -1,4 +1,59 @@
-table {
+.gameBoard {
+    height: 81vh;
+}
+.Player {
+    background-color: #FF5833;
+    border-style: solid;
+    display: inline-block;
+}
+.grow {
+    height: 27vh;
+}
+.gcol {
+    height: 27vh;
+}
+.cardsHolder {
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 27vh;
+    display: inline-block;
+}
+.cards {
+    height:45%;
+    width:8%;
+    margin-right:10px;
+    margin-bottom:10px;
+    background-size: cover;
+}
+
+#card11 { background-image: url(../img/2_of_clubs.svg); }
+#card12 { background-image: url(../img/2_of_clubs.svg); }
+#card13 { background-image: url(../img/2_of_clubs.svg); }
+#card14 { background-image: url(../img/2_of_clubs.svg); }
+#card15 { background-image: url(../img/2_of_clubs.svg); }
+#card16 { background-image: url(../img/2_of_clubs.svg); }
+#card21 { background-image: url(../img/2_of_clubs.svg); }
+#card22 { background-image: url(../img/2_of_clubs.svg); }
+#card23 { background-image: url(../img/2_of_clubs.svg); }
+#card24 { background-image: url(../img/2_of_clubs.svg); }
+#card25 { background-image: url(../img/2_of_clubs.svg); }
+#card26 { background-image: url(../img/2_of_clubs.svg); }
+#card31 { background-image: url(../img/2_of_clubs.svg); }
+#card32 { background-image: url(../img/2_of_clubs.svg); }
+#card33 { background-image: url(../img/2_of_clubs.svg); }
+#card34 { background-image: url(../img/2_of_clubs.svg); }
+#card35 { background-image: url(../img/2_of_clubs.svg); }
+#card36 { background-image: url(../img/2_of_clubs.svg); }
+#card41 { background-image: url(../img/2_of_clubs.svg); }
+#card42 { background-image: url(../img/2_of_clubs.svg); }
+#card43 { background-image: url(../img/2_of_clubs.svg); }
+#card44 { background-image: url(../img/2_of_clubs.svg); }
+#card45 { background-image: url(../img/2_of_clubs.svg); }
+#card46 { background-image: url(../img/2_of_clubs.svg); }
+
+
+/*table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 99%;
@@ -46,4 +101,4 @@ button[type=submit] {
     margin-bottom: 0px;
     padding: 10px;
     padding-bottom: 0px;
-}
+}*/

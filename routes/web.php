@@ -20,15 +20,16 @@
 
 
 use App\Models\Record;
+use App\Models\Game;
 use Illuminate\Http\Request;
 
 /**
  * Show Task Dashboard
  */
 Route::get('/', function () {
-    $record = \App\Models\Record::all();
+    $game = \App\Models\Game::all();
 
-    return view('record', ['record' => $record]);
+    return view('game', ['game' => $game]);
 });
 
 /**
