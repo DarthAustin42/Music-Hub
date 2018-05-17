@@ -32,6 +32,42 @@ Route::get('/', function () {
     return view('game', ['game' => $game]);
 });
 
+**
+ * Add New Task
+ */
+Route::post('/game', function (Request $request) {
+    //
+    $validator = Validator::make($request->all(), [
+        'id' => 'required|max:255',
+        'card1' => 'required',
+        'card2' => 'required',
+        'card3' => 'required',
+        'card4' => 'required',
+        'card5' => 'required',
+        'card6' => 'required',
+        'pointsTaken' => 'required',
+    ]);
+
+    if ($validator->fails()) {
+        return redirect('/')
+            ->withInput()
+            ->withErrors($validator);
+    }
+
+    $game = new Record;
+    $game->id = $request->id;
+    $game->card1 = $request->card1;
+    $game->card2 = $request->card2;
+    $game->card3 = $request->card3;
+    $game->card4 = $request->card4;
+    $game->card5 = $request->card5;
+    $game->card6 = $request->card6;
+    $game->pointsTaken = $request->pointsTaken;
+    $game->save();
+
+    return redirect('/');
+});
+
 /**
  * Add New Task
  */
