@@ -14,7 +14,7 @@
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col' style="width:16%"><img src='img/{{ $games->card1 }}.svg' style="height:17vh;"></div>
+			    				<div class='col' style="width:16%"><center><img src='img/{{ $games->card1 }}.svg' style="height:17vh;"></center></div>
 			    				<div class='col' style="width:16%"><img src='img/{{ $games->card2 }}.svg' style="height:17vh;"></div>
 			    				<div class='col' style="width:16%"><img src='img/{{ $games->card3 }}.svg' style="height:17vh;"></div>
 		    				</div>
