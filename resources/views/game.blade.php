@@ -43,7 +43,7 @@
 			</table>
 	    @endsection	
 
-	    {{ $default = games::where('games', 1)->where('id','1')->get() }}
+	    {{ $default = games::where('id', 1)->where('id','1')->get() }}
 	    @section('testingThis')
 	    	<div class='row'>
 	    		<div class='col'></div>
