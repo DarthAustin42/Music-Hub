@@ -26,7 +26,7 @@ use Illuminate\Http\Request;
 /**
  * Show Task Dashboard
  */
-Route::get('/', function () {
+Route::get('/theGame', function () {
     $game = \App\Models\Game::all();
 
     return view('game', ['game' => $game]);
