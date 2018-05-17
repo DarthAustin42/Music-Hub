@@ -76,7 +76,7 @@ Route::get('/shuffle', function (Game $game, Request $request) {
     $game->card6 = $cardNums[23];
     $game->save();
 
-    return redirect('/');
+   // return redirect('/');
 });
 
 
