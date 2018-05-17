@@ -5,15 +5,15 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script>
 			var refreshTimeout;
-			
+
 			function refreshCards() {
 				$('#theMainBoard').load(document.URL + ' #theMainBoard');
 				refreshTimeout = window.setTimeout(refreshCards, 10000);
+				console.log("hi");
 			}
 			function shuffleDeck() {
 				jQuery.ajax("/shuffle");
-				clearTimeout(refreshTimeout);
-				refreshCards();
+				refreshTimeout = window.setTimeout(refreshCards, 500);
 			}
 		</script>
 	</head>
