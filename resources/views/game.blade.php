@@ -2,12 +2,17 @@
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="/css/myStyle.css">
+		<script>
+			function getLogin() {
+				alert("TEST LOGIN");
+			}
+		</script>
 	</head>
 	<body>
 
 		@extends('layouts.app')
 	    @section('gameBoard')
-	    <div id="theMainBoard" style="margin:20px;">
+	    <div id="theMainBoard" class="theMainBoard" style="margin:20px;">
 	    	@foreach($game as $games)
 	    		@if($games->id == '1')
 			    	<div class='row' style="height:30vh;">
