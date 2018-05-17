@@ -12,7 +12,6 @@
 				console.log("hi");
 			}
 			function shuffleDeck() {
-				$("#shuffleLable").show().delay(10000).fadeOut();
 				jQuery.ajax("/shuffle");
 				clearTimeout(refreshTimeout);
 				refreshTimeout = window.setTimeout(refreshCards, 500);
@@ -60,7 +59,6 @@
 			    		<div class='col'>
 			    			<div class='row'></div>
 							<div class='row'><center><button onclick="shuffleDeck()">SHUFFLE</button></center></div>
-							<div id="shuffleLable"><h1>Shuffling... Please wait</h1></div>
 							<div class='row'></div>
 			    		</div>
 
