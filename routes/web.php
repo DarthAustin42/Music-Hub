@@ -37,7 +37,7 @@ Route::get('/', function () {
  * Add New Task
  */
 
-Route::post('/shuffle', function (Game $game, Request $request) {
+Route::get('/shuffle', function (Game $game, Request $request) {
     $cardNums = range(1, 24); 
     shuffle($cardNums);
     $game = Game::find(1);
