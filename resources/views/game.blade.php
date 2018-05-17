@@ -49,7 +49,7 @@
 			    $game->card4 = $cardNums[21],
 			    $game->card5 = $cardNums[22],
 			    $game->card6 = $cardNums[23],
-			    $game->save();
+			    $game->save()
 				}}
 			}
 		</script>
