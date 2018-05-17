@@ -7,43 +7,7 @@
 
 		@extends('layouts.app')
 
-		@section('gameBoard')
-			<table id="songList">
-				<thead>
-				  	<tr>
-				    	<th>Title</th>
-					    <th>Author</th>
-					    <th>Album</th>
-					    <th>Genre</th>
-					    <th>Time</th>
-				  	</tr>
-			 	</thead>
-			 	<tbody>
-				  	@foreach($game as $games)
-					  	<tr>
-						    <td>{{$games->id}}</td>
-						    <td>{{$games->card1}}</td>
-						    <td>{{$games->card2}}</td>
-						    <td>{{$games->card3}}</td>
-						    <td>{{$games->card4}}</td>
-						    <td>{{$games->card5}}</td>
-						    <td>{{$games->card6}}</td>
-						    <td>{{$games->pointsTaken}}</td>
-						    <td>
-						        <form action="{{ url('game/'.$games->id) }}" method="POST">
-						            {{ csrf_field() }}
-						            {{ method_field('DELETE') }}
-
-						            <button type="submit" class="btn btn-danger">Delete</button>
-						        </form>
-						    </td>
-						</tr>
-					@endforeach
-				</tbody>
-			</table>
-	    @endsection	
-
-	    @section('testingThis')
+	    @section('gameBoard')
 	    	@foreach($game as $games)
 	    		<?php $c1 = 'img/{{$games->card1}}.svg'?>
 	    		@if($games->id == '1')

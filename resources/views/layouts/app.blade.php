@@ -15,8 +15,6 @@
 		  </div>
 		</div>
         @yield('gameBoard')
-        @yield('testingThis')
-        
 
         <div class="footer">
 		  	<center><p>© Austin Nielsen</p></center>
