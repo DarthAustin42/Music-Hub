@@ -7,7 +7,7 @@
 
 		@extends('layouts.app')
 	    @section('gameBoard')
-	    <div id="theMainBoard" style="height: 90vh; width: 95vw;">
+	    <div id="theMainBoard" style="margin:20px;">
 	    	@foreach($game as $games)
 	    		@if($games->id == '1')
 			    	<div class='row' style="height:30vh;">

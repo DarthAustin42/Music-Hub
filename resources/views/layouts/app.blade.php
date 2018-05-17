@@ -9,11 +9,6 @@
     </head>
 
     <body>
-    	
         @yield('gameBoard')
-
-        <div class="footer">
-		  	<center><p>© Austin Nielsen</p></center>
-		</div>
     </body>
 </html>
