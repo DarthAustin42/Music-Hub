@@ -66,7 +66,7 @@
 	    			<div class='row'>
 	    				<div class='col'>abc42</div>
 	    				<div class='col'>abc42</div>
-	    				<div class='col' <abc42/div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    			<div class='row'>
 	    				<div class='col'>abc42</div>
