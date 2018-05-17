@@ -39,7 +39,7 @@ Route::get('/', function () {
 
 Route::post('/game/shuffle', function (Game $game, Request $request) {
     $cardNums = range(1, 24); 
-    bool shuffle(array &$cardNums);
+    shuffle(array &$cardNums);
     $game = Game::find(1);
     $game->card1 = $cardNums[0]
     $game->card2 = $cardNums[1]
