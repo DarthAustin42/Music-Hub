@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 
 final class Game extends Model  
 {
-
+	public $timestamps = false;
 }
 
