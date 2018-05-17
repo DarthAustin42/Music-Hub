@@ -47,6 +47,7 @@ Route::get('/shuffle', function (Game $game, Request $request) {
     $game->card4 = $cardNums[3];
     $game->card5 = $cardNums[4];
     $game->card6 = $cardNums[5];
+    $game->save();
 
     $game = Game::find(2);
     $game->card1 = $cardNums[6];
@@ -55,6 +56,7 @@ Route::get('/shuffle', function (Game $game, Request $request) {
     $game->card4 = $cardNums[9];
     $game->card5 = $cardNums[10];
     $game->card6 = $cardNums[11];
+    $game->save();
 
     $game = Game::find(3);
     $game->card1 = $cardNums[12];
@@ -63,7 +65,8 @@ Route::get('/shuffle', function (Game $game, Request $request) {
     $game->card4 = $cardNums[15];
     $game->card5 = $cardNums[16];
     $game->card6 = $cardNums[17];
-
+    $game->save();
+    
     $game = Game::find(4);
     $game->card1 = $cardNums[18];
     $game->card2 = $cardNums[19];
