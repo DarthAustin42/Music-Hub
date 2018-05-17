@@ -20,13 +20,13 @@
 				  	</tr>
 			 	</thead>
 			 	<tbody>
-				  	@foreach($record as $records)
+				  	@foreach($game as $games)
 					  	<tr>
-						    <td>{{$records->title}}</td>
-						    <td>{{$records->author}}</td>
-						    <td>{{$records->album}}</td>
-						    <td>{{$records->genre}}</td>
-						    <td>{{$records->time}}</td>
+						    <td>{{$games->title}}</td>
+						    <td>{{$games->author}}</td>
+						    <td>{{$games->album}}</td>
+						    <td>{{$games->genre}}</td>
+						    <td>{{$games->time}}</td>
 						    <td>
 						        <form action="{{ url('game/'.$games->id) }}" method="POST">
 						            {{ csrf_field() }}
