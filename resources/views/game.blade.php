@@ -8,7 +8,8 @@
 		@extends('layouts.app')
 
 		@section('currentRecords')
-			<center><h1>Current Song List</h1></center>
+			<center><h1>Pepper</h1></center>
+			<h1>Hello</h1>
 			<table id="songList">
 				<thead>
 				  	<tr>
