@@ -11,7 +11,6 @@
 			function refreshCards() {
 				$('#theMainBoard').load(document.URL + ' #theMainBoard');
 				refreshTimeout = window.setTimeout(refreshCards, 10000);
-				console.log("hi");
 			}
 			function shuffleDeck() {
 				jQuery.ajax("/shuffle");
@@ -59,10 +58,9 @@
 			    			</div>
 			    		</div>
 			    		<div class='col'>
-			    			<form action="/shuffle">
-							    <input type="submit" value="Shuffle the deck!" />
-							</form>
-							<button onclick="shuffleDeck()">SHUFFLE</button>
+			    			<div class='row'></div>
+							<div class='row'><center><button onclick="shuffleDeck()">SHUFFLE</button></center></div>
+							<div class='row'></div>
 			    		</div>
 
 			   	@elseif($games->id == '3')
