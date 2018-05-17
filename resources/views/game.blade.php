@@ -45,7 +45,7 @@
 
 	    @section('testingThis')
 	    	@foreach($game as $games)
-	    		@if({{$game->id}} == '1')
+	    		@if({{$games->id}} == '1')
 			    	<div class='row'>
 			    		<div class='col'></div>
 			    		<div class='col'>
@@ -63,7 +63,7 @@
 			    		<div class='col'></div>
 			    	</div>
 
-			    @elseif({{$game->id}} == '2')
+			    @elseif({{$games->id}} == '2')
 			    	<div class='row'>
 			    		<div class='col'>
 			    			<div class='row'>
@@ -79,7 +79,7 @@
 			    		</div>
 			    		<div class='col'></div>
 
-			   	@elseif({{$game->id}} == '3')
+			   	@elseif({{$games->id}} == '3')
 			    		<div class='col'>
 			    			<div class='row'>
 			    				<div class='col'>abc42</div>
@@ -94,7 +94,7 @@
 			    		</div>
 			    	</div>
 
-			    @elseif({{$game->id}} == '4')
+			    @elseif({{$games->id}} == '4')
 			    	<div class='row'>
 			    		<div class='col'></div>
 			    		<div class='col'>
