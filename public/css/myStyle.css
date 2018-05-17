@@ -1,4 +1,13 @@
-.gameBoard {
+img {
+    height:45%;
+    width:8%;
+    margin-right:10px;
+    margin-bottom:10px;
+    background-size: cover;
+    display: inline-block;
+}
+
+/*.gameBoard {
     height: 81vh;
 }
 .Player {
@@ -50,7 +59,7 @@
 #card43 { background-image: url(../img/2_of_clubs.svg); }
 #card44 { background-image: url(../img/2_of_clubs.svg); }
 #card45 { background-image: url(../img/2_of_clubs.svg); }
-#card46 { background-image: url(../img/2_of_clubs.svg); }
+#card46 { background-image: url(../img/2_of_clubs.svg); }*/
 
 
 /*table {
