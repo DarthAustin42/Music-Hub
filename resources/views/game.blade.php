@@ -42,7 +42,7 @@
 			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:10vw;"></div>
 			    			</div>
 			    		</div>
-			    		<div class='col'><button href="/shuffle">Shuffle</button></div>
+			    		<div class='col'><button><a href"/shuffle">Shuffle</a></button></div>
 
 			   	@elseif($games->id == '3')
 			    		<div class='col'>
