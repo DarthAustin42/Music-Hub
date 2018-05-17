@@ -9,8 +9,46 @@
 			}
 			function refreshCards() {
 				$('#theMainBoard').load(document.URL + ' #theMainBoard');
-				console.log("hi");
 				window.setTimeout(refreshCards, 10000);
+			}
+			function shuffleDeck() {
+				$cardNums = range(1, 24); 
+			    shuffle($cardNums);
+			    $game = Game::find(1);
+			    $game->card1 = $cardNums[0];
+			    $game->card2 = $cardNums[1];
+			    $game->card3 = $cardNums[2];
+			    $game->card4 = $cardNums[3];
+			    $game->card5 = $cardNums[4];
+			    $game->card6 = $cardNums[5];
+			    $game->save();
+
+			    $game = Game::find(2);
+			    $game->card1 = $cardNums[6];
+			    $game->card2 = $cardNums[7];
+			    $game->card3 = $cardNums[8];
+			    $game->card4 = $cardNums[9];
+			    $game->card5 = $cardNums[10];
+			    $game->card6 = $cardNums[11];
+			    $game->save();
+
+			    $game = Game::find(3);
+			    $game->card1 = $cardNums[12];
+			    $game->card2 = $cardNums[13];
+			    $game->card3 = $cardNums[14];
+			    $game->card4 = $cardNums[15];
+			    $game->card5 = $cardNums[16];
+			    $game->card6 = $cardNums[17];
+			    $game->save();
+			    
+			    $game = Game::find(4);
+			    $game->card1 = $cardNums[18];
+			    $game->card2 = $cardNums[19];
+			    $game->card3 = $cardNums[20];
+			    $game->card4 = $cardNums[21];
+			    $game->card5 = $cardNums[22];
+			    $game->card6 = $cardNums[23];
+			    $game->save();
 			}
 		</script>
 	</head>
@@ -56,6 +94,7 @@
 			    			<form action="/shuffle">
 							    <input type="submit" value="Shuffle the deck!" />
 							</form>
+							<button onclick="shuffleDeck()">SHUFFLE</button>
 			    		</div>
 
 			   	@elseif($games->id == '3')
