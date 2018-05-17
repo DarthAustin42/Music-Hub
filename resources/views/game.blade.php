@@ -45,7 +45,7 @@
 
 	    @section('testingThis')
 	    	@foreach($game as $games)
-	    		<?php $c1 = {{$games->card1}}?>
+	    		<?php $c1 = '{{$games->card1}}'?>
 	    		@if($games->id == '1')
 			    	<div class='row'>
 			    		<div class='col'></div>
