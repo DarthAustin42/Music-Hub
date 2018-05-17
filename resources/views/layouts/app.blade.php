@@ -14,11 +14,10 @@
                 })
                 console.log("HI");
             }
-            update;
         </script>
     </head>
 
-    <body>
+    <body onload="update()">
         @yield('gameBoard')
     </body>
 </html>
