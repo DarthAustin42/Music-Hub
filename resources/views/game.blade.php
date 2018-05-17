@@ -12,7 +12,7 @@
 	    		@if($games->id == '1')
 			    	<div class='row'>
 			    		<div class='col'></div>
-			    		<div class='col'>
+			    		<div class='col'><center>
 			    			<div class='row' style="width:47%">
 			    				<div class='col' style="width:16%"><img src='img/{{ $games->card1 }}.svg' style="height:17vh;"></div>
 			    				<div class='col' style="width:16%"><img src='img/{{ $games->card2 }}.svg' style="height:17vh;"></div>
@@ -20,7 +20,7 @@
 			    				<div class='col' style="width:16%"><img src='img/{{ $games->card4 }}.svg' style="height:17vh;"></div>
 			    				<div class='col' style="width:16%"><img src='img/{{ $games->card5 }}.svg' style="height:17vh;"></div>
 			    				<div class='col' style="width:16%"><img src='img/{{ $games->card6 }}.svg' style="height:17vh;"></div>
-			    			</div>
+			    			</div></center>
 			    		</div>
 			    		<div class='col'></div>
 			    	</div>
