@@ -10,7 +10,7 @@
 	    <div id="theMainBoard" style="height: 90vh; width: 95vw;">
 	    	@foreach($game as $games)
 	    		@if($games->id == '1')
-			    	<div class='row'>
+			    	<div class='row' style="height:30vh;">
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
@@ -28,7 +28,7 @@
 			    	</div>
 
 			    @elseif($games->id == '2')
-			    	<div class='row'>
+			    	<div class='row' style="height:30vh;">
 			    		<div class='col'>
 			    			<div class='row'>
 			    				<div class='col' style="width:16%"><center><img src='img/{{ $games->card1 }}.svg' style="height:17vh;"></center></div>
@@ -63,7 +63,7 @@
 			    	</div>
 
 			    @else
-			    	<div class='row'>
+			    	<div class='row' style="height:30vh;">
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
