@@ -14,7 +14,7 @@
                 })
                 console.log("HI");
             }
-            update();
+            update;
         </script>
     </head>
 
