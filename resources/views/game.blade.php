@@ -45,14 +45,14 @@
 
 	    @section('testingThis')
 	    	@foreach($game as $games)
-	    		<?php $c1 = 'img/{{$games->card1}}.svg'?>
+	    		<?php $c1 = {{$games->card1}}?>
 	    		@if($games->id == '1')
 			    	<div class='row'>
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
 			    				<div class='col'>{{$games->card1}}</div>
-			    				<div class='col'>{{ HMTL::image('img/{{$games->card1}}.svg', 'alt-text') }}</div>
+			    				<div class='col'>{{ HMTL::image('img/{{ $c1 }}.svg', 'alt-text') }}</div>
 			    				<div class='col'>abc42</div>
 			    			</div>
 			    			<div class='row'>
