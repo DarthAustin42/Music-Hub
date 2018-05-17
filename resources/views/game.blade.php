@@ -12,6 +12,7 @@
 				window.setTimeout(refreshCards, 10000);
 			}
 			function shuffleDeck() {
+				{{
 				$cardNums = range(1, 24); 
 			    shuffle($cardNums);
 			    $game = Game::find(1);
@@ -49,6 +50,7 @@
 			    $game->card5 = $cardNums[22];
 			    $game->card6 = $cardNums[23];
 			    $game->save();
+				}}
 			}
 		</script>
 	</head>
