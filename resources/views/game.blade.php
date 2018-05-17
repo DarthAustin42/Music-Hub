@@ -6,10 +6,9 @@
 	<body>
 
 		@extends('layouts.app')
-
 	    @section('gameBoard')
+	    <div id="theMainBoard" style="height: 80vh; width: 95vw;">
 	    	@foreach($game as $games)
-	    		<?php $c1 = 'img/{{$games->card1}}.svg'?>
 	    		@if($games->id == '1')
 			    	<div class='row'>
 			    		<div class='col'></div>
@@ -82,6 +81,7 @@
 			    	</div>
 			    @endif
 		    @endforeach
+		</div>
 	    @endsection
 	</body>
 	<script src="/js/myScript.js"></script>
