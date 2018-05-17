@@ -43,12 +43,13 @@
 			</table>
 	    @endsection	
 
+	    {{ $default = Specific::where('games', 1)->where('id','1')->get() }}
 	    @section('testingThis')
 	    	<div class='row'>
 	    		<div class='col'></div>
 	    		<div class='col'>
 	    			<div class='row'>
-	    				<div class='col' id="card11"></div>
+	    				<div class='col'>{{ $default->id }}</div>
 	    				<div class='col'><img src={{ URL::asset("img/2_of_clubs.svg") }}></div>
 	    				<div class='col'>abc42</div>
 	    			</div>
