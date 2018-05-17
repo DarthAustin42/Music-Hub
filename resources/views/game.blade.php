@@ -48,14 +48,14 @@
 	    		<div class='col'></div>
 	    		<div class='col'>
 	    			<div class='row'>
-	    				<div class='col' id='card11'></div>
-	    				<div class='col' id='card12'></div>
-	    				<div class='col' id='card13'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    			<div class='row'>
-	    				<div class='col' id='card14'></div>
-	    				<div class='col' id='card15'></div>
-	    				<div class='col' id='card16'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    		</div>
 	    		<div class='col'></div>
@@ -64,27 +64,27 @@
 	    	<div class='row'>
 	    		<div class='col'>
 	    			<div class='row'>
-	    				<div class='col' id='card21'></div>
-	    				<div class='col' id='card22'></div>
-	    				<div class='col' id='card23'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col' <abc42/div>
 	    			</div>
 	    			<div class='row'>
-	    				<div class='col' id='card24'></div>
-	    				<div class='col' id='card25'></div>
-	    				<div class='col' id='card26'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    		</div>
 	    		<div class='col'></div>
 	    		<div class='col'>
 	    			<div class='row'>
-	    				<div class='col' id='card31'></div>
-	    				<div class='col' id='card32'></div>
-	    				<div class='col' id='card33'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    			<div class='row'>
-	    				<div class='col' id='card34'></div>
-	    				<div class='col' id='card35'></div>
-	    				<div class='col' id='card36'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    		</div>
 	    	</div>
@@ -93,14 +93,14 @@
 	    		<div class='col'></div>
 	    		<div class='col'>
 	    			<div class='row'>
-	    				<div class='col' id='card41'></div>
-	    				<div class='col' id='card42'></div>
-	    				<div class='col' id='card43'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    			<div class='row'>
-	    				<div class='col' id='card44'></div>
-	    				<div class='col' id='card45'></div>
-	    				<div class='col' id='card46'></div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
+	    				<div class='col'>abc42</div>
 	    			</div>
 	    		</div>
 	    		<div class='col'></div>
