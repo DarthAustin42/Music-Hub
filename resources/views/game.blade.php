@@ -51,7 +51,7 @@
 			    		<div class='col'>
 			    			<div class='row'>
 			    				<div class='col'></div>
-			    				<div class='col'><img src={{ URL::asset("{{$games->card1}}.svg") }}></div>
+			    				<div class='col'><img src={{ URL::asset("{{$games->card1}} + .svg") }}></div>
 			    				<div class='col'>abc42</div>
 			    			</div>
 			    			<div class='row'>
