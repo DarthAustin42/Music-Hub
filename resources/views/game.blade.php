@@ -9,9 +9,7 @@
 
 		@section('gameBoard')
 			<center><h1>Pepper</h1></center>	
-			<div>
-				<p>Hello</p>
-			</div>
+			
 			<table id="pepperGameBoard">
 				<thead>
 				  	<tr>
