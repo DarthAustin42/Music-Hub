@@ -32,7 +32,7 @@ Route::get('/', function () {
     return view('game', ['game' => $game]);
 });
 
-**
+/**
  * Add New Task
  */
 Route::post('/game', function (Request $request) {
