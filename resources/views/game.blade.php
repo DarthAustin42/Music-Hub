@@ -22,11 +22,14 @@
 			 	<tbody>
 				  	@foreach($game as $games)
 					  	<tr>
-						    <td>{{$games->title}}</td>
-						    <td>{{$games->author}}</td>
-						    <td>{{$games->album}}</td>
-						    <td>{{$games->genre}}</td>
-						    <td>{{$games->time}}</td>
+						    <td>{{$games->id}}</td>
+						    <td>{{$games->card1}}</td>
+						    <td>{{$games->card2}}</td>
+						    <td>{{$games->card3}}</td>
+						    <td>{{$games->card4}}</td>
+						    <td>{{$games->card5}}</td>
+						    <td>{{$games->card6}}</td>
+						    <td>{{$games->pointsTaken}}</td>
 						    <td>
 						        <form action="{{ url('game/'.$games->id) }}" method="POST">
 						            {{ csrf_field() }}
