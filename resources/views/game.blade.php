@@ -7,9 +7,8 @@
 
 		@extends('layouts.app')
 
-		@section('gameBoard')
-			<center><h1>Pepper</h1></center>	
-
+		@section('currentRecords')
+			<center><h1>Current Song List</h1></center>
 			<table id="songList">
 				<thead>
 				  	<tr>
