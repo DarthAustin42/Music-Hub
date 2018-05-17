@@ -7,21 +7,21 @@
 
 		@extends('layouts.app')
 	    @section('gameBoard')
-	    <div id="theMainBoard" style="height: 80vh; width: 95vw;">
+	    <div id="theMainBoard" style="height: 90vh; width: 95vw;">
 	    	@foreach($game as $games)
 	    		@if($games->id == '1')
 			    	<div class='row'>
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    		</div>
 			    		<div class='col'></div>
@@ -31,14 +31,14 @@
 			    	<div class='row'>
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    		</div>
 			    		<div class='col'>
@@ -50,14 +50,14 @@
 			   	@elseif($games->id == '3')
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    		</div>
 			    	</div>
@@ -67,14 +67,14 @@
 			    		<div class='col'></div>
 			    		<div class='col'>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card1 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card2 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card3 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    			<div class='row'>
-			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17%; width:10vw;"></div>
-			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17%; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card4 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card5 }}.svg' style="height:17vh; width:10vw;"></div>
+			    				<div class='col'><img src='img/{{ $games->card6 }}.svg' style="height:17vh; width:10vw;"></div>
 			    			</div>
 			    		</div>
 			    		<div class='col'></div>
